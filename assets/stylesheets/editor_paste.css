@@ -1,0 +1,12 @@
+.jstb_pastetext {
+  background-image: url(../images/puppypaste.png);
+}
+
+.pasteText-textarea {
+  width: 100%;
+  min-height: 200px;
+}
+
+.pasteText-button {
+  float: right;
+}
