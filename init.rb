@@ -9,6 +9,6 @@ Redmine::Plugin.register :redmine_paste_text do
   author_url 'http://evolvingweb.ca'
   description 'Contains paste extension inspired by https://puppypaste.com/'
   version '0.0.1'
-  requires_redmine :version_or_higher => '4.1'
+  requires_redmine :version_or_higher => '3.4'
 
 end
