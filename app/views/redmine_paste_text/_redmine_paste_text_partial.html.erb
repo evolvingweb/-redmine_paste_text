@@ -4,7 +4,9 @@
    if header_tags_content.present? && header_tags_content.include?('/jstoolbar/')
      content_for :header_tags do
         javascript_include_tag('lib/textile.js', plugin: 'redmine_paste_text') + "\n"  +
+        javascript_include_tag('lib/redactor.min.js', plugin: 'redmine_paste_text') + "\n"  +
         javascript_include_tag('main.js', plugin: 'redmine_paste_text') + "\n"  +
+        stylesheet_link_tag('redactor.css', plugin: 'redmine_paste_text') + "\n" +
         stylesheet_link_tag('editor_paste.css', plugin: 'redmine_paste_text') + "\n"
      end
    end

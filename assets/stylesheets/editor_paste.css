@@ -10,3 +10,6 @@
 .pasteText-button {
   float: right;
 }
+.redactor_pasteText-textarea {
+  height: 450px;
+}
