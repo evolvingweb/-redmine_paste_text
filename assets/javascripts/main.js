@@ -17,8 +17,9 @@
             $("#main").append(pasteTextDialog);
             $('#pasteTextDialog').append('<textarea class="pasteText-textarea"></textarea>');
             $('#pasteTextDialog').append('<button class="pasteText-button">Paste</button>');
+            $('.pasteText-textarea').redactor();
             $('.pasteText-button').click(function() {
-              var pastedText = $('.pasteText-textarea').val();
+              var pastedText = $('.pasteText-textarea').data('redactor').getCode();
               $('.pasteText-textarea').val('');
               var toPaste = toTextile(pastedText);
               textField.encloseLineSelection(toPaste, '');
