@@ -10,3 +10,7 @@
 .pasteText-button {
   float: right;
 }
+
+.redactor_editor {
+  max-height: 300px;
+}
