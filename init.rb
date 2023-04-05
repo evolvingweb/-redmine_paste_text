@@ -1,6 +1,8 @@
 require 'redmine'
 
-require File.dirname(__FILE__) + '/lib/editor_paste_patch'
+Rails.configuration.to_prepare do
+  require_dependency "editor_paste_patch"
+end
 
 Redmine::Plugin.register :redmine_paste_text do
   name 'Redmine Paste Text'
